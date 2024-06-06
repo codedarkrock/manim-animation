@@ -1,0 +1,112 @@
+.well {
+  background-color: white;
+}
+body {
+  margin: 0;
+}
+.sample-header {
+  position: fixed;
+  top:0;
+  bottom: 0;
+height: auto;
+  width: 100%;
+  background-image: url("cw_yt_banner.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sample-header::before {
+  position: absolute;
+  content: url("cw.png");
+  color: white;
+  top:100;
+  bottom: 100;
+
+}
+.sample-header-section {
+  position: relative;
+  padding: 15% 0 10%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-weight: 500;
+}
+h2 {
+  font-weight: 400;
+}
+.sample-section-wrap {
+  position: relative;
+  background-color: white;
+}
+.sample-section {
+  position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+.btn {    
+  position: relative;
+  display: inline-flex;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  font-size: 1.4rem;
+  color: #fff;
+/*  letter-spacing: 1.1rem; */
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);  
+  cursor: pointer;
+  user-select: none;
+   justify-content: flex-end;
+}
+
+.btn:before, .btn:after {
+  content: '';
+  position: absolute; 
+  transition: inherit;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: #ff0000;;
+  transition-delay: .5s;
+}
+
+.btn:hover:before {
+  transition-delay: 0s;
+}
+.btn:hover:after {
+  background: #fff;
+  transition-delay: .35s;
+  height: 100%;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+  left: 0;
+  height: 0;
+  width: 100%;
+}
+
+.from-top:before {
+  bottom: 0;  
+  border: 1px solid #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.from-top:after {
+  top: 0;
+  height: 0;
+}
+.from-top:hover:before,
+.from-top:hover:after {
+  height: 100%;
+}
